@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos del contenedor principal */
+
+.config-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    /* Modificado para centrar verticalmente */
+}
+
+
+/* Estilos para la sección de resumen */
+
+.section-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    flex-basis: calc(20% - 10px);
+    /* Distribuir en 5 columnas con un pequeño espacio entre ellas */
+    background-image: linear-gradient(85deg, #918a8a98, #ffffff, #918a8a98);
+    /* Degradado rojo a blanco */
+    color: #000000;
+    /* Color de texto negro */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.summary-item .icon {
+    font-size: 30px;
+}
+
+.summary-item h2 {
+    margin: 10px 0 5px 0;
+    /* Añadido margen inferior */
+    font-size: 18px;
+}
+
+.summary-item .count {
+    font-size: 14px;
+}
+
+
+/* Estilos para la sección de filtros */
+
+.filter {
+    text-align: right;
+    margin-bottom: 20px;
+    /* Añadido margen inferior para separar del siguiente contenido */
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+
+/* Estilos para las tablas */
+
+.tables .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tables .data-table th,
+.tables .data-table td {
+    border: 1px solid #00000006;
+    padding: 8px;
+    text-align: left;
+}
+
+.tables .data-table .dataTable th {
+    background-image: linear-gradient(45deg, #918a8a98, #ffffff);
+    color: white;
+}
+
+
+/* Estilos para los botones */
+
+.button-group {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* Estilos para hacer responsive */
+
+@media screen and (max-width: 768px) {
+    .summary-item {
+        flex-basis: calc(50% - 10px);
+        /* Distribuir en 2 columnas con un pequeño espacio entre ellas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .summary-item {
+        flex-basis: 100%;
+        /* Ocupar toda la anchura */
+    }
+}

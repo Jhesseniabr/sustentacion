@@ -1,0 +1,140 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.contenedorcentrado {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Reducir el margen inferior */
+    font-size: 34px;
+    color: #333;
+    margin-top: 20px;
+    /* Reducir el margen superior */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.password-field {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn {
+    width: 20%;
+    /* El botón ocupará todo el ancho del contenedor */
+    padding: 15px 30px;
+    /* Aumenta el relleno para hacer el botón más grande */
+    font-size: 18px;
+    /* Aumenta el tamaño de la fuente */
+    margin-top: 30px;
+    /* Agrega un margen superior para separar el botón de los campos */
+}
+
+
+/* Media Queries para pantallas pequeñas (móviles) */
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 30px;
+        /* Reduce el margen superior */
+    }
+    .contenedorcentrado {
+        padding: 20px;
+        /* Reduce el relleno */
+    }
+    h2 {
+        margin-bottom: 30px;
+        /* Reduce el margen inferior del título */
+        font-size: 20px;
+        /* Reduce el tamaño de la fuente del título */
+    }
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+        /* Reduce el relleno de los campos de entrada y selección */
+    }
+    .submit-btn {
+        padding: 12px 24px;
+        /* Reduce el relleno del botón */
+        font-size: 16px;
+        /* Reduce el tamaño de la fuente del botón */
+    }
+}
+
+
+/* Media Queries para pantallas medianas (tabletas) */
+
+@media screen and (max-width: 768px) {
+    .contenedorcentrado {
+        padding: 25px;
+        /* Ajusta el relleno */
+    }
+    .form-group input,
+    .form-group select {
+        padding: 9px;
+        /* Ajusta el relleno de los campos de entrada y selección */
+    }
+    .submit-btn {
+        padding: 14px 28px;
+        /* Ajusta el relleno del botón */
+        font-size: 17px;
+        /* Ajusta el tamaño de la fuente del botón */
+    }
+}

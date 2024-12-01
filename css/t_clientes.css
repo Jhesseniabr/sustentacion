@@ -1,0 +1,22 @@
+.content-wrapper {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 5000px;
+    /* Anchura máxima del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.table-wrapper {
+    margin-top: 20px;
+}
+
+.table-wrapper .btn {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,100 @@
+.popup-form2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-form2 h2 {
+    text-align: center;
+    color: #333;
+}
+
+.popup-form2 .form-group {
+    margin-bottom: 15px;
+}
+
+.popup-form2 label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.popup-form2 input[type="text"],
+.popup-form2 input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup-form2 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-form2 input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+/* Para pantallas pequeñas (móviles) */
+
+@media screen and (max-width: 600px) {
+    .popup-form {
+        width: 90%;
+        padding: 15px;
+    }
+    .popup-form input[type="text"] {
+        width: calc(100% - 10px);
+    }
+    .popup-form input[type="submit"],
+    .header .more-btn {
+        width: 100%;
+    }
+}
+
+
+/* Para pantallas medianas (tabletas) */
+
+@media screen and (max-width: 768px) {
+    .popup-form {
+        width: 80%;
+    }
+    .popup-form input[type="text"] {
+        width: calc(100% - 20px);
+    }
+    .popup-form input[type="submit"],
+    .header .more-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+/* Estilo para el sidebar */
+
+.sidebar {
+    margin-bottom: 20px;
+    /* Ajusta este valor según sea necesario */
+}
+
+
+/* Estilo para la sección principal */
+
+.home-section {
+    padding: 20px;
+    /* Ajusta este valor según sea necesario */
+}

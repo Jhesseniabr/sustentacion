@@ -1,0 +1,56 @@
+/* Responsividad básica */
+
+.specific-menu .header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.specific-menu .logo img {
+    max-width: 90%;
+}
+
+.specific-menu .menu-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specific-menu .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.specific-menu .main-menu ul li {
+    padding: 10px;
+}
+
+.specific-menu .main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.specific-menu .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.specific-menu .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .specific-menu .main-menu ul {
+        flex-direction: column;
+        display: none;
+    }
+    .specific-menu .hamburger {
+        display: flex;
+    }
+}
